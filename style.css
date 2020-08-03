@@ -1,0 +1,131 @@
+body {
+  background-color: #E5EFF5;
+  color: #FFF;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: #2BB3B1;
+}
+
+h2 {
+  color: #BFDF32;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px 1px rgba(111, 131, 156, 0.35);
+  display: grid;
+  grid-template-columns: repeat(2, 375px);
+  grid-template-rows: auto auto;
+  margin: auto;
+  max-width: 750px;
+}
+
+.top {
+  background-color: #FFF;
+  border-radius: 10px 10px 0 0;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  padding: 25px 45px;
+}
+
+.top p {
+  color: #BBB;
+  line-height: 1.5;
+}
+
+.left {
+  background-color: #2BB3B1;
+  border-radius: 0 0 0 10px;
+  grid-column: 1/2;
+  grid-row: 2/2;
+  padding: 30px 45px;
+}
+
+.right {
+  background-color: #4ABEBD;
+  border-radius: 0 0 10px 0;
+  grid-column: 2/2;
+  grid-row: 2/2;
+  padding: 30px 45px;
+ }
+
+button {
+  background-color: #BFDF32;
+  box-shadow: 5px 5px 15px 1px rgba(10, 61, 61, 0.35);
+  border: 1px solid #BFDF32;
+  border-radius: 5px;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+  padding: 15px 0;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #b3d12f;
+  border-top: 1px solid #d7f844;
+  box-shadow: 3px 3px 7px 1px rgba(9, 43, 43, 0.35);
+}
+
+button:focus {
+  outline: none;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.per-month {
+  color: #a0e4e9;
+}
+
+.list {
+  color: #bee5e7;
+  line-height: 1.5;
+  list-style-type: none;
+  padding: 0;
+}
+
+
+@media (max-width: 700px) {
+  button {
+    margin: 20px 0 20px 0;
+  }
+  .card {
+    width: auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    margin: 0 50px;
+  }
+  .top {
+    padding: 15px 30px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .left {
+    border-radius: 0;
+    padding: 15px 30px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .right {
+    border-radius: 0 0 10px 10px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    padding: 15px 30px;
+  }
+}
